@@ -86,6 +86,14 @@
             max-width: 90%;
             max-height: 90%;
         }
+
+        /* Add equal height for press mentions */
+        .grid.md\:grid-cols-2.gap-8 > a > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-sand">
@@ -113,7 +121,7 @@
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-pacific/60 via-forest/40 to-transparent"></div>
         <div class="absolute inset-0 bg-black/20"></div>
-        <div class="absolute inset-0 parallax-bg" style="background-image: url('images/blancRdProject_forRealEstate-47.jpg');"></div>
+        <div class="absolute inset-0 parallax-bg" style="background-image: url('images/blanc_re-01.jpg');"></div>
         
         <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
             <h1 class="font-serif text-5xl md:text-7xl font-light mb-6 fade-in">
@@ -150,7 +158,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
                 <div class="fade-in">
                     <div class="organic-shadow rounded-lg overflow-hidden">
-                        <img src="images/blancRdProject_forRealEstate-8.jpg" 
+                        <img src="images/blanc_re-04.jpg" 
                              alt="Modern living space" class="w-full h-96 object-cover hover:scale-105 transition-transform duration-700">
                     </div>
                 </div>
@@ -194,34 +202,47 @@
                         <!-- Dynamically generated images -->
                         <script>
                             const imageDirectory = [
-                                "blancRdProject_forRealEstate-1.jpg",
-                                "blancRdProject_forRealEstate-26.jpg",
-                                "blancRdProject_forRealEstate-5.jpg",
-                                "blancRdProject_forRealEstate-31.jpg",
-                                "blancRdProject_forRealEstate-17.jpg",
-                                "blancRdProject_forRealEstate-6.jpg",
-                                "blancRdProject_forRealEstate-8.jpg",
-                                "blancRdProject_forRealEstate-10.jpg",
-                                "blancRdProject_forRealEstate-13.jpg",
-                                "blancRdProject_forRealEstate-15.jpg",
-                                "blancRdProject_forRealEstate-20.jpg",
-                                "blancRdProject_forRealEstate-2.jpg",
-                                "blancRdProject_forRealEstate-22.jpg",
-                                "blancRdProject_forRealEstate-25.jpg",
-                                "blancRdProject_forRealEstate-30.jpg",
-                                "blancRdProject_forRealEstate-32.jpg",
-                                "blancRdProject_forRealEstate-33.jpg",
-                                "blancRdProject_forRealEstate-36.jpg",
-                                "blancRdProject_forRealEstate-42.jpg",
-                                "blancRdProject_forRealEstate-44.jpg",
-                                "blancRdProject_forRealEstate-47.jpg",
-                                "blancRdProject_forRealEstate-48.jpg",
-                                "blancRdProject_forRealEstate-50.jpg",
-                                "blancRdProject_forRealEstate-53.jpg",
-                                "blancRdProject_forRealEstate-54.jpg",
-                                "blancRdProject_forRealEstate-55.jpg",
-                                "blancRdProject_forRealEstate-56.jpg",
-                                "blancRdProject_forRealEstate-9.jpg"
+                                "blanc_re-01.jpg",
+                                "blanc_re-02.jpg",
+                                "blanc_re-03.jpg",
+                                "blanc_re-04.jpg",
+                                "blanc_re-05.jpg",
+                                "blanc_re-06.jpg",
+                                "blanc_re-07.jpg",
+                                "blanc_re-08.jpg",
+                                "blanc_re-09.jpg",
+                                "blanc_re-10.jpg",
+                                "blanc_re-11.jpg",
+                                "blanc_re-12.jpg",
+                                "blanc_re-13.jpg",
+                                "blanc_re-14.jpg",
+                                "blanc_re-15.jpg",
+                                "blanc_re-16.jpg",
+                                "blanc_re-17.jpg",
+                                "blanc_re-18.jpg",
+                                "blanc_re-19.jpg",
+                                "blanc_re-20.jpg",
+                                "blanc_re-21.jpg",
+                                "blanc_re-22.jpg",
+                                "blanc_re-23.jpg",
+                                "blanc_re-24.jpg",
+                                "blanc_re-25.jpg",
+                                "blanc_re-26.jpg",
+                                "blanc_re-27.jpg",
+                                "blanc_re-28.jpg",
+                                "blanc_re-29.jpg",
+                                "blanc_re-30.jpg",
+                                "blanc_re-31.jpg",
+                                "blanc_re-32.jpg",
+                                "blanc_re-33.jpg",
+                                "blanc_re-34.jpg",
+                                "blanc_re-35.jpg",
+                                "blanc_re-36.jpg",
+                                "blanc_re-37.jpg",
+                                "blanc_re-38.jpg",
+                                "blanc_re-39.jpg",
+                                "blanc_re-40.jpg",
+                                "blanc_re-41.jpg"
                             ];
 
                             const galleryContainer = document.getElementById('gallery-container');
@@ -264,7 +285,7 @@
                         Tucked away at the end of a private road, this sanctuary sits on 10 acres of pristine meadow and forest only minutes from Eastsound Village. The perfect balance of complete privacy and accessible island living.
                     </p>
                     <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                        Wake to the sound of eagles and lapping waves, spend your days exploring pristine trails, kayaking crystal-clear waters, or simply savoring the profound quiet that only island life can provide.
+                        Wake to the sound of songbirds and spend your days exploring pristine trails, kayaking crystal-clear waters, or simply savoring the profound quiet that only island life can provide.
                     </p>
                     
                     <div class="space-y-4">
@@ -294,7 +315,7 @@
                 
                 <div class="fade-in">
                     <div class="organic-shadow rounded-lg overflow-hidden">
-                        <img src="images/blancRdProject_forRealEstate-54.jpg" 
+                        <img src="images/blanc_re-36.jpg" 
                              alt="Orcas Island landscape" class="w-full h-96 object-cover">
                     </div>
                 </div>
@@ -373,7 +394,7 @@
                 <a href="https://www.seattletimes.com/pacific-nw-magazine/gordon-walker-designs-a-house-for-the-future/" class="text-pacific hover:underline">
                     <div class="bg-white p-6 rounded-lg organic-shadow">
                         <h4 class="font-semibold text-pacific mb-2">Seattle Times Feature Home</h4>
-                        <p class="text-gray-600 italic">"We’ve got to quit building the memory of what was.” - Walker on why he built this home as his vision for thoughtful, sustainable living.</p>
+                        <p class="text-gray-600 italic">"We’ve got to quit building the memory of what was.” - A feature and interview with Walker when the home was built</p>
                     </div>
                 </a>
                 </div>
@@ -396,7 +417,7 @@
                             <h3 class="font-semibold text-lg mb-2">Listing Agent</h3>
                             <p class="mb-4">Lisa Botiller Wolford<br>Orcas Island Realty</p>
                             <p class="mb-2">📞 (360) 317-8331</p>
-                            <p>✉️ lisaworcas@gmail.com</p>
+                            <p><a href="mailto:example@gmail.com">✉️ lisaworcas@gmail.com</a></p>
                         </div>
                         <div>
                             <h3 class="font-semibold text-lg mb-2">Property Details</h3>
